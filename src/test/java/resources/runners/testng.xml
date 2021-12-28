@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1" >
+    <listeners>
+        <listener class-name="com.amazon.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Laptop Test" >
+        <classes>
+            <class name="com.amazon.testsuite.LaptopTest"/>
+        </classes>
+    </test>
+    <test name="Mobile Test" >
+        <classes>
+            <class name="com.amazon.testsuite.MobileTest"/>
+        </classes>
+    </test>
+
+</suite>
